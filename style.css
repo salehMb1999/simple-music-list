@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.container {
+  width: 80vw;
+  height: 60vh;
+  margin: 10rem auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainMusic {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.mainMusic img {
+  width: 40rem;
+  border-radius: 10rem;
+}
+.mainMusic i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: red;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.mainMusic:hover {
+  transform: scale(1.1);
+}
+.mainMusic:hover i {
+  opacity: 1;
+}
